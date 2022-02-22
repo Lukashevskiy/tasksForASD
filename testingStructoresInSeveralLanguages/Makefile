@@ -24,7 +24,11 @@ testCpp.o: testCpp.cpp
 clean:
 	$(RM) *.o *.gcd *.txt $(TESTCPP)
 
-run: all
+
+printgraph: all
+	python3 graphics.py
+
+run: all printgraph
 	./$(TESTCPP) > outCpp.txt
 	python3 testPython.py > outPy.txt
-	python3 graphics.py
+
