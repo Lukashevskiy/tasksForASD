@@ -1,0 +1,13 @@
+size of Allocator - 1
+size of Reference - 8
+size of value_type - 8
+size of mapped+key type - 8
+8
+80
+800
+8000
+80000
+800000
+8000000
+80000000
+FUCK yourself
