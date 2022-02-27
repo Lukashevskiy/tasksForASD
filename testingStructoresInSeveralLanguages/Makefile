@@ -1,19 +1,13 @@
 CXX=g++
 CFLAGS= -c -Wall --std=c++11
-DEBUG= 
-
 ifeq ($(OS), Windows_NT)
 	RM := del
 	TESTCPP := testcpp.exe
 else
 	RM := rm
-	TESTCPP := testcpp
+	TESTCPP := ./testcpp
 
 endif
-debug: all
-	$(DEBUG= -g)
-debug: testcpp
-
 
 all: testcpp testPython.py graphics.py
 
@@ -24,11 +18,8 @@ testCpp.o: testCpp.cpp
 clean:
 	$(RM) *.o *.gcd *.txt $(TESTCPP)
 
-
-printgraph: all
-	python3 graphics.py
-
-run: all printgraph
-	./$(TESTCPP) > outCpp.txt
+run: all 
+	$(TESTCPP) > outCpp.txt
 	python3 testPython.py > outPy.txt
+	python3 graphics.py
 

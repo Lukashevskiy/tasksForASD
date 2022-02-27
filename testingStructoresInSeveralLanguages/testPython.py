@@ -1,6 +1,6 @@
 import sys
 import time
-n_exp = 5
+n_exp = 7
 
 for i in range(0, n_exp+1):
     n = 10**i
@@ -9,5 +9,5 @@ for i in range(0, n_exp+1):
     for j in range(n):
         test_m[j] = j
     stop = time.perf_counter_ns()
-    print(sys.getsizeof(test_m), stop-start)
+    print(n, sys.getsizeof(test_m), stop-start)
 

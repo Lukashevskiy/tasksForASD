@@ -6,7 +6,7 @@
 
 using namespace std;
 
-const int n_exp = 8; 
+const int n_exp =7 ; 
 
 typedef map<int, int> test_map;
 
@@ -16,7 +16,7 @@ int main(){
 	cout << "size of Pointer - " << sizeof(test_map::pointer) << endl;
 	cout << "size of value_type - " << sizeof(test_map::value_type) << endl;
 	*/
-	for(int i = 0; i < n_exp; i++){
+	for(int i = 0; i <=n_exp; i++){
 		int n = floor(pow(10, i)+0.5);
 		auto start = chrono::high_resolution_clock::now();
 		test_map test_m;
