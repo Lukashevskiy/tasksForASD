@@ -3,6 +3,7 @@
 #include <algorithm>
 #include <cmath>
 #include <map>
+
 using namespace std;
 
 const int n_exp = 8; 
@@ -26,10 +27,11 @@ int main(){
 
 		auto stop = chrono::high_resolution_clock::now();	
 		
-		cout << test_m.size()*sizeof(test_map::value_type)
+        cout << n << " ";
+
+		cout << test_m.size() * sizeof(test_map::value_type)
 		       	+sizeof(test_map::pointer) 
-			+sizeof(test_map::allocator_type)	
-			<< " ";
+			    +sizeof(test_map::allocator_type) << " ";
 		
 		cout << chrono::duration<long long, nano>(stop-start).count() << "\n";
 	}	

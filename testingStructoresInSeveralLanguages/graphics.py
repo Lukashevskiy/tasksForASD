@@ -19,6 +19,6 @@ cpp_test = get_data(path_cpp_test)
 py_test = get_data(path_py_test)
 
 print(cpp_test)
-#plt.plot(cpp_test[0], cpp_test[1])
+plt.plot(cpp_test[0], cpp_test[1])
 plt.plot(py_test[0], py_test[1])
 plt.show()
