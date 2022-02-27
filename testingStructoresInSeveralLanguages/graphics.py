@@ -21,6 +21,18 @@ py_test = get_data(path_py_test)
 
 print(cpp_test)
 print(py_test)
+plt.subplot(121)
+plt.title("сравнение потребления памяти")
+plt.xlabel("колличество елементов в map")
+plt.ylabel("занимаемое место в памяти")
 plt.plot(cpp_test[0], cpp_test[1])
 plt.plot(py_test[0], py_test[1])
+
+plt.subplot(122)
+plt.title("сравнение времени")
+plt.xlabel("колличество элементов в map")
+plt.ylabel("величина времени добавление всех елементов с контейнер")
+plt.plot(cpp_test[0], cpp_test[2])
+plt.plot(py_test[0], py_test[2])
+
 plt.show()
