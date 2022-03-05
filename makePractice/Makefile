@@ -5,7 +5,7 @@ N = 10
 generate.o: genAngels.cpp
 	$(CXX) $(CFLAGS) genAngels.cpp -o generate.o
 read.o: readAngles.cpp
-	$(CXX) $(CFLAGS) readAngels.cpp -o read.o
+	$(CXX) $(CFLAGS) readAngles.cpp -o read.o
 generate: generate.o
 	$(CXX) generate.o -o generate
 read: read.o
