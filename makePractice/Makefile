@@ -2,8 +2,8 @@ CXX = g++
 CFLAGS =-Wall -c --std=c++11
 OUTPUT = output.txt
 N = 10
-generate.o: genAngels.cpp
-	$(CXX) $(CFLAGS) genAngels.cpp -o generate.o
+generate.o: genAngles.cpp
+	$(CXX) $(CFLAGS) genAngeles.cpp -o generate.o
 read.o: readAngles.cpp
 	$(CXX) $(CFLAGS) readAngles.cpp -o read.o
 generate: generate.o

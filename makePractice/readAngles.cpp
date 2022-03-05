@@ -3,8 +3,8 @@
 
 using namespace std;
 
-double read_angle(double * angels){
-	return 2 * sin(angels[0]) * sin(angels[1]) + cos(angels[2]);  
+double read_angle(double * angles){
+	return 2 * sin(angles[0]) * sin(angles[1]) + cos(angles[2]);  
 }
 
 int main(){
