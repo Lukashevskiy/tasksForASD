@@ -8,9 +8,9 @@ generate.o: genAngles.cpp
 read.o: readAngles.cpp
 	$(CXX) $(CFLAGS) readAngles.cpp -o read.o
 generate: generate.o
-	$(CXX) generate.o -o /bin/generate
+	$(CXX) generate.o -o generate
 read: read.o
-	$(CXX) read.o -o /bin/read
+	$(CXX) read.o -o read
 
 all: generate read
 clean:
