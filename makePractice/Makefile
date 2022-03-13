@@ -4,7 +4,7 @@ OUTPUT = output.txt
 
 N = 10
 generate.o: genAngles.cpp
-	$(CXX) $(CFLAGS) genAngeles.cpp -o generate.o
+	$(CXX) $(CFLAGS) genAngles.cpp -o generate.o
 read.o: readAngles.cpp
 	$(CXX) $(CFLAGS) readAngles.cpp -o read.o
 generate: generate.o
